@@ -40,3 +40,17 @@ if(v){
         document.write("Your email: "+email+" will now receive updates. Thank you.");
     }
 }
+
+var user = new Object();
+user.firstName = "John"
+user.lastName = "Doe"
+user.age = 18;
+user.email = email;
+user.fullName = function(){
+    return (user.firstName + " " + user.lastName);
+}
+
+document.write("New user created:<br>");
+document.write("Name: " + user.fullName + "<br>");
+document.write("Age: " + user.age + "<br>");
+document.write("Email: " + email + "<br>");
