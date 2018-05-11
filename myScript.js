@@ -51,6 +51,6 @@ user.fullName = function(){
 }
 
 document.write("New user created:<br>");
-document.write("Name: " + user.fullName + "<br>");
+document.write("Name: " + user.fullName() + "<br>");
 document.write("Age: " + user.age + "<br>");
 document.write("Email: " + email + "<br>");
