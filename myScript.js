@@ -29,7 +29,7 @@ function calculateAge(birthYear, currentYear){
 }
 calculateAge(1994,2018);
 */
-
+/*
 alert("This is an alert");
 
 var v = confirm("Would you like to receive updates?");
@@ -37,10 +37,9 @@ if(v){
     var email = prompt("Please enter your email to receive updates: ");
     var c = confirm("Please confirm that your email is " + email);
     if(c){
-        document.write("Your email: "+email+" will now receive updates. Thank you.");
+        document.write("Your email: "+email+" will now receive updates. Thank you.<br>");
     }
 }
-
 var user = new Object();
 user.firstName = "John"
 user.lastName = "Doe"
@@ -54,3 +53,20 @@ document.write("New user created:<br>");
 document.write("Name: " + user.fullName() + "<br>");
 document.write("Age: " + user.age + "<br>");
 document.write("Email: " + email + "<br>");
+
+delete user.age;
+alert(user.age);
+
+*/
+
+var player = {
+    name: "Yaboi",
+    age: 23,
+    //creating a nested object weapon inside player
+    weapon:{
+        name: "sword",
+        damage: 5
+    }
+}
+
+document.write(player.name+"'s "+player.weapon.name+" does "+player.weapon.damage+" damage.");
