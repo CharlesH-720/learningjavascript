@@ -53,10 +53,20 @@ var ulElements = document.getElementsByTagName("ul")[0];
 //alert("Number of children: " + ulElements.childNodes.length);//returns 7 instead of 3 due to 4 groups of whitespace
 
 //get child nodes without whitespace
-var ulChildren = ulElements.childNodes;
-for (var i = 0; i < ulChildren.length; i++){
-    if(ulChildren[i].nodeType == 1){
-        alert(ulChildren[i].innerHTML);
-    }
-}
+//var ulChildren = ulElements.childNodes;
+//for (var i = 0; i < ulChildren.length; i++){
+  //  if(ulChildren[i].nodeType == 1){
+//        alert(ulChildren[i].innerHTML);
+//    }
+//}
 
+
+var liFirstChild = ulElements.firstChild.firstChild.nodeValue;
+alert(liFirstChild);
+
+var liLastChild = ulElements.lastChild.firstChild.nodeValue;
+alert(liLastChild);
+
+
+// white space betweent the UL and P in index.html is counted as a node so you must use the previousSibling attribute twice.
+alert(ulElements.previousSibling.previousSibling.innerHTML);
