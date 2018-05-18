@@ -1,0 +1,1 @@
+// JavaScript Cross Browser Event Handling Script
