@@ -4,7 +4,7 @@ var hElement = document.getElementById("my-heading");
 hElement.className = "heading-css";
 
 (function() {
-    var imgElement = document.getElementById("img");
+    var imgElement = document.getElementById("imgsauce");
     var imgTop = 0;
     var imgLeft = 450;
     

@@ -1,20 +1,10 @@
-// JavaScript - Event Object
+// JavaScript  - Event Objects
 
-var btn = document.getElementById("btn");
+// get button by its id
+var button = document.getElementById("button0");
 
-function changeButtonFontSize(event) {
-    this.style.fontSize = "50px";
-    alert(event.type);
-    alert(event.target);
+function changeButtonSize() {
+    this.style.fontSize = "40px";
 }
 
-btn.addEventListener("click", changeButtonFontSize);
-
-var aElement = document.getElementById("click-me");
-
-function clickMe(event) {
-    event.preventDefault();
-    alert("Yo you clicked me, dawg");
-}
-
-aElement.addEventListener("click", clickMe);
+button.addEventListener("click", changeButtonSize);

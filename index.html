@@ -12,10 +12,12 @@
             }
             
             .heading-css-01{
-                font-size: 75px;
+                color: darkolivegreen;
+                border: 5px solid gold;
+                background-color: sandybrown;
+                padding: 20px;
             }
-            
-            #img {
+            #imgsauce {
                 position: absolute;
                 top: 100px;
                 left: 300px;
@@ -25,8 +27,8 @@
     </head>
     
     <body>
-        <h1 id="my-heading">Welcome to Document Object Model Practice.</h1>
-        <a id='click-me' href='https://news.ycombinator.com'>click me</a>
+        <h1 id="my-heading" class="heading-css">Welcome to Document Object Model Practice.</h1>
+        
         <p class="my-paragraph">This is paragraph 1.</p>
         <p class="my-paragraph">This is paragraph 2.</p>
         
@@ -38,12 +40,19 @@
             <li id="list-item-03">List2 Item #3</li>
         </ul>
         
+        <!--<button id="button1">Change Button Font Size</button>
+        <br><br>-->
         <input type="text" name="user-name" value="hello"><br><br>
-        <button id="btn">Click Me</button>
-        <img id="img" src="js.jpg" alt="Image Placeholder" width="100" height="100"><br><br>
+        
+        <!--<button id='btn' onclick="alert('Button has been pressed.');">Confirm</button>-->
+        <!--<button id='but-in' onclick='doSomething();'>Clickarooni</button>-->
+        
+        <button id='button0'>Click me!</button>
+        
+        <img id="imgsauce" src="js.jpg" alt="Image Placeholder" width="100" height="100"><br><br>
         
         <a href="https://old.reddit.com/r/dankmemes">Some dank-ass memes, my guy.</a>
         
-        <script src="crossBrowserEvents.js"></script>
+        <script src="eventObject.js"></script>
     </body>
 </html>
